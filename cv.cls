@@ -121,13 +121,13 @@
 % \begin{positions}
 %   \entry{<title>}{<date>}
 % \end{positions}
-\newenvironment{positions}{%
-  \vspace{-\parskip}%
-  % \entry{<title>}{<date>}
-  \newcommand*{\entry}[2]{\item \text{##1}\printdate{##2}}%
-  \begin{itemize}[leftmargin=0pt,label={}]%
-    }{%
-\end{itemize}%
+\newenvironment{positions}{
+    \vspace{-\parskip}
+    % \entry{<title>}{<date>}
+    \newcommand*{\entry}[2]{\item \text{##1}\printdate{##2}}
+    \begin{itemize}[leftmargin=0pt,label={}]
+    }{
+    \end{itemize}
 }
 
 % Header
@@ -185,8 +185,8 @@
 
 % Publication
 \RequirePackage[
-  style=ieee,
-  dashed=false,
+  style=nature,
+  %dashed=false,
   doi=false,
   isbn=false,
   url=false,
